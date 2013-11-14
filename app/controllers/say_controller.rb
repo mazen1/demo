@@ -1,10 +1,10 @@
 class SayController < ApplicationController
   def hello
-  	render 'say/goodbye'
+    @time=Time.now
   end
 
   def goodbye
-  render 'say/hello'
+  
   end
 
 end
