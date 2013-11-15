@@ -2,6 +2,8 @@ Demo::Application.routes.draw do
 
   #get "say/hello"
   #get "say/goodbye"
+  root :to => redirect('say/index')
+  get 'say/index'
   get 'say/hello' => 'say#hello'
   get 'say/goodbye' => 'say#goodbye'
   # The priority is based upon order of creation: first created -> highest priority.
